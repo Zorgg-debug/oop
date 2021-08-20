@@ -1,0 +1,33 @@
+﻿<Window x:Class="oop.Company"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:oop" xmlns:wpfTool="http://schemas.xceed.com/wpf/xaml/toolkit"
+        mc:Ignorable="d"
+        Title="Company" Height="481.579" Width="800">
+    <Grid>
+        <GroupBox Header="Общая информация" HorizontalAlignment="Left" Height="227" Margin="10,10,0,0" VerticalAlignment="Top" Width="772">
+            <Grid Margin="0,0,0,-13">
+                <Label Content="Название организации" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.141,-0.447" Width="148"/>
+                <TextBox x:Name="tb_name_organization" HorizontalAlignment="Left" Height="23" Margin="185,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="435"/>
+                <Label Content="Описание" HorizontalAlignment="Left" Margin="10,36,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.361,0.408" Width="127"/>
+                <TextBox x:Name="tb_about" HorizontalAlignment="Left" Height="143" Margin="185,48,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="435"/>
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="Контактная информация" HorizontalAlignment="Left" Height="148" Margin="10,250,0,0" VerticalAlignment="Top" Width="483">
+            <Grid HorizontalAlignment="Left" Height="119" Margin="10,0,-2,0" VerticalAlignment="Top" Width="463">
+                <Label Content="Контактный номер" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="10,0,0,0"/>
+                <wpfTool:MaskedTextBox Mask="+7 (000) 000-00-00" x:Name="tb_telnumber" HorizontalAlignment="Left" Height="23" Margin="178,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="193"/>
+                <Label Content="E-mail" HorizontalAlignment="Left" Margin="10,26,0,0" VerticalAlignment="Top"/>
+                <Label Content="Сайт" HorizontalAlignment="Left" Margin="10,52,0,0" VerticalAlignment="Top"/>
+                <Label Content="Адрес" HorizontalAlignment="Left" Margin="10,78,0,0" VerticalAlignment="Top"/>
+                <TextBox x:Name="tb_mail" HorizontalAlignment="Left" Height="23" Margin="178,28,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="193"/>
+                <TextBox x:Name="tb_site" HorizontalAlignment="Left" Height="23" Margin="178,55,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="193"/>
+                <TextBox x:Name="tb_adress" HorizontalAlignment="Left" Height="23" Margin="178,81,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="193"/>
+            </Grid>
+        </GroupBox>
+        <Button x:Name="btn_save" Content="Сохранить" HorizontalAlignment="Left" Margin="641,388,0,0" VerticalAlignment="Top" Width="75" Click="btn_save_Click"/>
+
+    </Grid>
+</Window>
